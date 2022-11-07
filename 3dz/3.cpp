@@ -110,17 +110,16 @@ void task1()
     }
 }
 void task2()
-{
-    Matrix matrix;
-    d2Vector MyVector1 = { {7} };
-    d2Vector MyVector2 = { {7, 2}, {-4, -6} };
-    d2Vector MyVector3 = { {-1,  7, -6}, {-8, -4, -1}, {2, 1, 5} };
-    d2Vector MyVector4 = { {-1,  7, -6,  3}, {-8, -4, -1, 2}, {2, 1, 5, -4}, {6, -1, 3, -1} };
-
-    cout << matrix.matrixDet(MyVector1, 1) << endl;
-    cout << matrix.matrixDet(MyVector2, 2) << endl;
-    cout << matrix.matrixDet(MyVector3, 3) << endl;
-    cout << matrix.matrixDet(MyVector4, 4) << endl;
+{    
+    Matrix mat;
+    d2Vector MyVector1 = { {5} };
+    d2Vector MyVector2 = { {5, 2}, {-2, -4} };
+    d2Vector MyVector3 = { {-1,  5, -6}, {-8, -2, -1}, {2, 1, 5} };
+    d2Vector MyVector4 = { {1,  5, -6,  3}, {-8, -2, 1, 2}, {2, 1, 5, -2}, {6, 1, 3, -1} };
+    cout << mat.matrixDet(MyVector1, 1) << endl;
+    cout << mat.matrixDet(MyVector2, 2) << endl;
+    cout << mat.matrixDet(MyVector3, 3) << endl;
+    cout << mat.matrixDet(MyVector4, 4) << endl;
 }
 void task3()
 {
@@ -135,8 +134,8 @@ void task3()
 int main()
 {
     //task1();
-    //task2();
-    task3();
+    task2();
+    //task3();
     return 0;
 }
 
